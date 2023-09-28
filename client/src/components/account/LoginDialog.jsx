@@ -9,24 +9,23 @@ import { addUser } from '../../service/api';
 import { AccountContext } from '../../context/AccountProvider';
 import { qrCodeImage } from '../../constants/data';
 
-const Component = styled(Box)`
-    display: flex; 
-`;
+
 
 const Container = styled(Box)`
-    padding: 56px 0 56px 56px;
+    padding: 40px 0 20px 20px;
 `;
 
 const QRCOde = styled('img')({
-    margin: '50px 0 0 50px',
     height: 264,
-    width: 264
+    width: 264,
+    margin: '10px 0 0 60px',
+
 });
 
 const Title = styled(Typography)`
-    font-size: 26px;
+    font-size: 24px;
     margin-bottom: 25px;
-    color: #525252;
+    color: $000;
     font-family: Segoe UI,Helvetica Neue,Helvetica,Lucida Grande,Arial,Ubuntu,Cantarell,Fira Sans,sans-serif;
     font-weight: 300;
 `;
@@ -42,12 +41,11 @@ const StyledList = styled(List)`
 `;
 
 const dialogStyle = {
-    marginTop: '12%',
-    height: '95%',
-    width: '60%',
+    marginTop: '5%',
+    height: '75%',
+    width: '30%',
     maxWidth: '100',
-    maxHeight: '100%',
-    borderRadius: 0,
+    
     boxShadow: 'none',
     overflow: 'hidden'
 }
@@ -82,13 +80,12 @@ const LoginDialog = () => {
             maxWidth={'md'}
             PaperProps={{ sx: dialogStyle }}
         >
-            <Component>
+            <Box>
                 <Container>
-                    <Title>To use WhatsApp on your computer:</Title>
+                    <Title>To use ChitChatr on your computer</Title>
                     <StyledList>
-                        <ListItem>1. Open WhatsApp on your phone</ListItem>
-                        <ListItem>2. Tap Menu Settings and select WhatsApp Web</ListItem>
-                        <ListItem>3. Point your phone to this screen to capture the code</ListItem>
+                    <ListItem>1. Open ChitChatr on your computer</ListItem>
+                    <ListItem>2. Login with your Google account</ListItem>
                     </StyledList>
                 </Container>
                 <Box style={{position:'relative'}}>
@@ -102,7 +99,7 @@ const LoginDialog = () => {
                             /> : null}
                     </Box>
                 </Box>
-            </Component>
+            </Box>
         </Dialog>
     )
 }

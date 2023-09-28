@@ -83,7 +83,7 @@ const HeaderMenu = () => {
                     >
                     </Logout> : null
                 } */}
-                </MenuOption>
+                New group</MenuOption>
             </Menu>
             <InfoDrawer open={openDrawer} setOpen={setOpenDrawer} profile={true} />
         </>

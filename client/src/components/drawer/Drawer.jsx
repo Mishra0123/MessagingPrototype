@@ -5,7 +5,7 @@ import { ArrowBack } from '@mui/icons-material';
 import Profile from './Profile';
 
 const Header = styled(Box)`
-  background: #008069;
+  background: #7F00FF;
   height: 107px;
   color: #FFFFFF;
   display: flex;
@@ -22,6 +22,7 @@ const Component = styled(Box)`
 
 const Text = styled(Typography)`
     font-size: 18px;
+    
 `
 
 const drawerStyle = {
@@ -29,7 +30,8 @@ const drawerStyle = {
     top: 17,
     height: '95%',
     width: '30%',
-    boxShadow: 'none'
+    boxShadow: 'none',
+    
 }
 
 const InfoDrawer = ({ open, setOpen, profile }) => {

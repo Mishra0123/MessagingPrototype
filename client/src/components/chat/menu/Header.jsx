@@ -52,8 +52,7 @@ const Header = () => {
             <Component>
                 <Image src={account.picture} onClick={() => toggleDrawer()} />
                 <Wrapper>
-                    <MessageIcon />
-                    <HeaderMenu/>
+                <HeaderMenu/>
                 </Wrapper>
             </Component>
             <InfoDrawer open={openDrawer} setOpen={setOpenDrawer} profile={true} />

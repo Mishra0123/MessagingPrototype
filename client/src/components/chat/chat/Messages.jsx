@@ -11,7 +11,7 @@ import Message from './Message';
 import Footer from './Footer';
 
 const Wrapper = styled(Box)`
-    background-image: url(${'https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png'});
+    background-image: url(${'https://png.pngtree.com/thumb_back/fh260/background/20210326/pngtree-light-blue-cute-striped-baby-blue-background-image_594858.jpg'});
     background-size: 50%;
 `;
 
